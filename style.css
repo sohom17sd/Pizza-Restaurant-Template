@@ -1,0 +1,347 @@
+@font-face {
+  font-family: ASC;
+  src:url('AmaticSC-Bold.ttf');
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: ASC;
+  }
+
+  /*==========Navbar starts==========*/
+  nav{
+    background-color: black;
+    opacity: 0.5;
+    width: 100%;
+    position: fixed;
+    font-size: 2em;
+  }
+  nav:hover{
+    opacity: 1.0;
+    transition: all ease-in-out 300ms;
+  }
+  nav li{
+    display: inline-block;
+    padding: 10px;
+  }
+  nav a{
+    text-decoration: none;
+    color: white;
+  }
+  nav a:hover{
+    color: #55d6aa;
+    transition: all ease-in-out 270ms;
+  }
+  /*==========Navbar ends==========*/
+
+
+  /*==========Home page starts==========*/
+.img-container{
+  width: 100%;
+  height: 100vh;
+  background-attachment: fixed;
+  background-image: url(Pizza1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.grid-container{
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.empty{
+  height: 30vh;
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+.title{
+  height: 60vh;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  text-align: center;
+}
+.left-corner{
+  height: 10vh;
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+.title h1{
+  font-size: 6em;
+  color: black;
+}
+.btn a{
+  display: inline-block;
+  text-decoration: none;
+  background-color: black;
+  font-size: 2em;
+  color: white;
+  margin-top: 30px;
+  padding: 5px 10px;
+}
+.btn a:hover{
+  padding: 10px 15px;
+  color: #55d6aa;
+  transition: all ease-in-out 270ms;
+}
+.left-corner p{
+  display: inline-block;
+  background-color: black;
+  font-size: 1.5em;
+  color: white;
+  margin-left: 10px;
+  padding: 5px 10px;
+}
+/*==========Home page ends==========*/
+
+/*==========Menu page starts==========*/
+.wrapper-menu{
+  background-color: black;
+  color: white;
+  height: auto;
+  font-size: 2em;
+}
+.wrapper-menu h1{
+  padding: 70px;
+  text-align: center;
+}
+  .grid-container2{
+    display: grid;
+    width: 70%;
+    margin: auto;
+    grid-template-columns: auto auto auto;
+    border-style: solid;
+    border-color: grey;
+    border-width: 0.5px;
+  }
+  .cont1{
+    text-align: center;
+    background-color: #f44336;
+    color: white;
+    height: 80px;
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+  .cont1 h2{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .cont2{
+    padding: 30px 15px;
+    background-color: white;
+    color: black;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    border-bottom-style: solid;
+    border-width: 2px;
+    border-color: #F0F8FF;
+  }
+  .cont2 h3{
+    display: inline-block;
+    padding-bottom: 30px;
+  }
+  .cont2 span{
+    background-color: #616161;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    float: right;
+  }
+
+  #special-hot{
+    float: none;
+    margin-left: 10px;
+    background-color: #f44336;
+  }
+  #special-new{
+    float: none;
+    margin-left: 10px;
+    background-color: #bfbfbf;
+  }
+  .cont2 h5{
+    color: #cccccc;
+  }
+
+/*==========Menu page ends==========*/
+
+
+/*==========Parallax image starts==========*/
+.wrapper-img1{
+  height: 400px;
+  background-image: url(Restaurant2.jpg);
+}
+/*==========Parallax image ends==========*/
+
+
+/*==========About page starts==========*/
+.wrapper-about{
+  height: auto;
+  background-color: #8b5f5b;
+  color: white;
+  line-height: 40px;
+  font-size: 1em;
+}
+.wrapper-about h1{
+  padding: 70px;
+  text-align: center;
+}
+.wrapper-about p{
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+.img-container2{
+  width: 70%;
+  margin: 0 auto;
+  height: 70vh;
+  background-image: url(Restaurant1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.wrapper-about h2{
+  padding: 70px;
+  text-align: center;
+}
+.grid-container3{
+  display: grid;
+  width: 70%;
+  margin: auto;
+  grid-template-columns: auto auto;
+}
+.empty2{
+  height: 100px;
+}
+/*==========About page ends==========*/
+
+
+/*==========Parallax image starts==========*/
+.wrapper-img2{
+  height: 400px;
+  background-image: url(Restaurant3.jpg);
+}
+/*==========Parallax image ends==========*/
+
+
+/*==========Contact page starts==========*/
+.wrapper-contact{
+  height: auto;
+  background-color: #778899;
+  font-size: 1em;
+  color: white;
+  line-height: 40px;
+}
+.wrapper-contact h1{
+  padding: 70px;
+  text-align: center;
+}
+.wrapper-contact p{
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+.wrapper-contact h3{
+  padding: 70px;
+  text-align: center;
+}
+.wrapper-contact form{
+  width: 70%;
+  margin: 0 auto;
+}
+.wrapper-contact form input[type=text]{
+  font-size: 1.2em;
+  width: 100%;
+  outline: none;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+.wrapper-contact form input[type=datetime-local]{
+  font-size: 1.2em;
+  width: 100%;
+  outline: none;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+.wrapper-contact form input[type=submit]{
+  font-size: 1.2em;
+  margin-top: 20px;
+  background-color: white;
+  width: 100%;
+  outline: none;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 100px;
+}
+.wrapper-contact form input[type=submit]:hover{
+  background-color: black;
+  color: #55d6aa;
+  transition: all ease-in-out 270ms;
+}
+/*==========Contact page endss==========*/
+
+
+/*==========Footer starts==========*/
+footer{
+  background-color: black;
+  color: #55d6aa;
+  text-align: center;
+  padding: 30px;
+  font-size: 1em;
+  line-height: 40px;
+  letter-spacing: 3px;
+}
+/*==========Footer ends==========*/
+
+
+/*==========Media Queries==========*/
+@media screen and (max-width: 700px)
+{
+  .left-corner {
+    text-align: center;
+  }
+  .left-corner p{
+    margin: 0;
+    position: relative;
+    top: 100%;
+    transform: translateY(-100%);
+  }
+  .img-container2{
+    width: 100%;
+    height: 50vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .grid-container3{
+    width: 70%;
+    grid-template-columns: auto;
+  }
+}
+
+@media screen and (max-width: 400px)
+{
+  nav{
+    visibility: collapse;
+  }
+  .empty{
+    height: 10vh;
+  }
+  .title{
+    height: 80vh;
+  }
+  .left-corner{
+    height: 10vh;
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+  .img-container2{
+    width: 100%;
+    height: 50vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
